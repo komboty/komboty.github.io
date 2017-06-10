@@ -8,10 +8,10 @@
 
    
 	
-	this.hello_World =  function(nombre){
+	this.holi =  function(nombre){
 		cadena = "Hello World!";
 		if(nombre == "javier"){
-		console.log("Hello world");
+		console.log("Holi");
 		return cadena;
 		}else{
 			return "usuario no autorizado";
@@ -39,7 +39,7 @@
     	var descriptor = {
         	blocks: [
            
-			['r','hello world+ %s', 'hello_World','nombre'],
+			['r','hello world+ %s', 'holi','nombre'],
 			['w', 'Secuencia 1 %n', 'secuencia1','algo'],
 			['h', 'Comenzar', 'comenzar']
         	]
