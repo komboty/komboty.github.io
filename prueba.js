@@ -8,7 +8,7 @@ new (function() {
     };
 
     ext.p = function() {
-	var h = hola;
+	var h = "hola";
 	return h;
     };
 
