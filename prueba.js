@@ -9,7 +9,7 @@
    
 	
 	this.holi =  function(nombre){
-		cadena = "Hello World!";
+		cadena = "Neta";
 		if(nombre == "javier"){
 		console.log("Holi");
 		return cadena;
@@ -45,5 +45,5 @@
         	]
     	};
     
-    ScratchExtensions.register('Javier Pruebas', descriptor, this);
+    ScratchExtensions.register('Pruebas', descriptor, this);
 })({});
