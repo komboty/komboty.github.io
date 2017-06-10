@@ -1,21 +1,20 @@
 (function() {
-    var ext = this;
-    
-    ext._shutdown = function() {};
+        
+    this._shutdown = function() {};
 
-    ext._getStatus = function() {
+    this._getStatus = function() {
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.p = function() {	
-	return 5;
+    this.holi = function() {	
+	console.log("holi");
     };
 
     var descriptor = {
         blocks: [
-            ['R', 'prueba', 'p'],
+            ['R', 'prueba', 'holi'],
         ]
     };
 
-    ScratchExtensions.register('hola', descriptor, ext);
+    ScratchExtensions.register('holi', descriptor, this);
 })({});
