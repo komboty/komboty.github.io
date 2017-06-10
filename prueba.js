@@ -1,4 +1,4 @@
-new (function() {
+(function() {
     var ext = this;
     
     ext._shutdown = function() {};
@@ -7,9 +7,8 @@ new (function() {
         return {status: 2, msg: 'Ready'};
     };
 
-    ext.p = function() {
-	var h = "hola";
-	return h;
+    ext.p = function() {	
+	return 5;
     };
 
     var descriptor = {
@@ -19,4 +18,4 @@ new (function() {
     };
 
     ScratchExtensions.register('hola', descriptor, ext);
-})();
+})({});
