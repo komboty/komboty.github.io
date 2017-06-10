@@ -13,7 +13,7 @@ new (function() {
 
     var descriptor = {
         blocks: [
-            ['w', 'prueba', 'p'],
+            ['R', 'prueba', 'p'],
         ]
     };
 
