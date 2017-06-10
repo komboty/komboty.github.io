@@ -8,7 +8,8 @@ new (function() {
     };
 
     ext.p = function() {
-	return hola;
+	var h = hola;
+	return h;
     };
 
     var descriptor = {
