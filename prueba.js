@@ -1,41 +1,33 @@
 new (function() {
-    
-var ext = this;
+    var ext = this;
 
+    // Cleanup function when the extension is unloaded
+    ext._shutdown = function() {};
 
-  
-ext._shutdown = function() {};
+    // Status reporting code
+    // Use this to report missing hardware, plugin or unsupported browser
+    ext._getStatus = function() {
+        return {status: 2, msg: 'Ready'};
+    };
 
+    // Functions for block with type 'w' will get a callback function as the 
+    // final argument. This should be called to indicate that the block can
+    // stop waiting.
+    ext.wait_random = function(callback) {
+        wait = Math.random();
+        console.log('Waiting for ' + wait + ' seconds');
+        window.setTimeout(function() {
+            callback();
+        }, wait*1000);
+    };
 
-    
-   
-ext._getStatus = function() {
-        
-return {status: 2, msg: 'Ready'};
-    
-};
-
-
-    
-    
-ext.holi = function() {
-     
-console.log('quiobo');   
-};
-
-    
-
-var descriptor = {
-        
-blocks: [
-            ['w', 'holi', 'holi'],
+    // Block and block menu descriptions
+    var descriptor = {
+        blocks: [
+            ['w', 'wait for random time', 'wait_random'],
         ]
-    
-};
+    };
 
-    
-
-
-ScratchExtensions.register('My first', descriptor, ext);
-
+    // Register the extension
+    ScratchExtensions.register('Random wait extension', descriptor, ext);
 })();
