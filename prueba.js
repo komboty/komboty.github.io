@@ -1,3 +1,5 @@
+//http://scratchx.org/?url=https://komboty.github.io./prueba.js
+
 var cadena = " ";
 
 (function() {
@@ -9,7 +11,7 @@ var cadena = " ";
     	};
    
 	
-	this.derecha =  function(){
+	/*this.derecha =  function(){
 		bloque = "derecha";
 		cadena = cadena + bloque + " ";
 	};
@@ -17,6 +19,14 @@ var cadena = " ";
 	this.izquierda =  function(){
 		bloque = "izquierda";
 		cadena = cadena + bloque + " ";
+	};*/
+
+	this.girar =  function(giro){
+		cadena = cadena + giro + " ";
+	};
+
+	this.mover =  function(movimiento){
+		cadena = cadena + movimiento + " ";
 	};
 
 	this.imprimir = function(){				
@@ -27,19 +37,25 @@ var cadena = " ";
 		cadena = " ";
 	};
 
-	this.comenzar = function(){
+	/*this.comenzar = function(){
 		return true;
-	};
+	};*/
     
     	var descriptor = {
         	blocks: [
            
-			[' ','Derecha', 'derecha'],
-			[' ','Izquierda', 'izquierda'],
+			/*[' ','Derecha', 'derecha'],
+			[' ','Izquierda', 'izquierda'],*/
+			[' ','Girar a la %m.direccion', 'girar', 'izquierda'],
+			[' ','Mover hacia %m.sentido', 'mover', 'adelante'],
 			['r', 'Imprimir', 'imprimir'],
 			[' ', 'Borrar', 'borrar'],
-			['h', 'Comenzar', 'comenzar']
-        	]
+			//['h', 'Comenzar', 'comenzar']
+        	],
+		menus: {
+        	direccion: ['derecha', 'izquierda'],
+		sentido: ['adelante', 'atras']
+		}
     	};
     
     ScratchExtensions.register('Pruebas', descriptor, this);
