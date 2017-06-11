@@ -44,5 +44,3 @@ var cadena = " ";
     
     ScratchExtensions.register('Pruebas', descriptor, this);
 })({});
-    ScratchExtensions.register('Pruebas', descriptor, this);
-})({});
