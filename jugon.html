@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KOM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function inicio(){
+                var canvas = document.getElementById('mycanvas');
+                var ctx = canvas.getContext('2d');
+                ctx.fillRect(0,0,680,600);
+                var balasJugador =[];
+                                                
+                function Nave(imagen){
+                    this.x = 250;
+                    this.y = 450;
+                    this.imagen = new Image();
+                    this.imagen.src = imagen;
+                }                
+                Nave.prototype.Mostrar = function(){                    
+                    ctx.drawImage(this.imagen, this.x, this.y);
+                };
+                
+                function Bala(x, y, imagen){
+                    this.x = x;
+                    this.y = y;
+                    this.velocidad = 1;
+                    this.imagen = new Image();
+                    this.imagen.src = imagen;
+                }                
+                Bala.prototype.Mostrar = function(){
+                    ctx.drawImage(this.imagen, this.x, this.y);
+                };
+                
+                var jugador = new Nave('naveV2.png');
+                jugador.Mostrar();
+                
+                canvas.addEventListener('mousemove', function(e) {
+                    jugador.x = e.clientX - 80;                      
+                    //ctx.clearRect(0, 0, 680, 600);
+                    //ctx.fillRect(0,0,680,600);
+                    jugador.Mostrar();
+                });
+                
+                //var bala = new Bala(50, 450, 'bala.png');
+                //bala.Mover();
+                
+                canvas.addEventListener('click', function(e) {
+                    /*bala = new Bala(e.clientX - 10, 450, 'balaV2.png');
+                    Mover();*/
+                    balasJugador.push(new Bala(e.clientX - 10, 450, 'balaV2.png'));
+                    Mover();
+                });
+        
+                function Mover(){
+                    //ctx.clearRect(0, 0, 680, 600);
+                    ctx.fillRect(0,0,680,600);                    
+                    /*bala.y -= bala.velocidad;
+                    bala.Mostrar();*/
+                    /*for(bala in balasJugador){
+                        bala.y -= bala.velocidad;                        
+                        bala.Mostrar();
+                    }*/
+                    
+                    for(a = 0; a < balasJugador.length; a++){
+                        balasJugador[a].y -= balasJugador[a].velocidad;
+                        balasJugador[a].Mostrar();
+                    }
+                    
+                    jugador.Mostrar();
+                    setTimeout(Mover, 60);
+                }
+            }
+        </script>
+    </head>
+    <body onload="inicio();">
+        <canvas id="mycanvas" width= "680px" height= "600px"></canvas>
+    </body>
+</html>
