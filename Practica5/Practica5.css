@@ -3,21 +3,13 @@ header, nav, section, footer, .menu:hover .menu-contenido, .menu a, .menu-conten
     display: block;
 }
 
-/*Fija la barra de título y menú desplegable en la parte superior izquierda de la página*/
-header, nav{
-    position: fixed;
-    left: 0px;
-    width: 100%;
-}
-
 /*Fondo y ajustes del título*/
 header{
-    font-size: 50px;
+    font-size: 100px;
     text-align: center;
     background-image: url("head.jpg");
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.3em cyan;
-    top: 0px;
 }
 
 /*Color de fondo del menú*/
@@ -25,10 +17,9 @@ nav, .menu, .menu-contenido a{
     background: #084E8C;
 }
 
-/*Fija el menú desplegable en la parte superior de la página
-dejando el espacio para la barra de título*/
+/*Tamaño de letra en el menú desplegable*/
 nav{
-    top: 59px;
+    font-size: 20px;
 }
 
 /*Muestra el menú desplegable en line horizontal*/
