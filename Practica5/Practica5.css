@@ -3,14 +3,14 @@ header, nav, section, footer, .menu:hover .menu-contenido, .menu a, .menu-conten
     display: block;
 }
 
-/*Fija la barra de título y menú desplegable en la parte superior izquierda de la página*/
+/*Fija la barra de tÃ­tulo y menÃº desplegable en la parte superior izquierda de la pÃ¡gina*/
 header, nav{
     position: fixed;
     left: 0px;
     width: 100%;
 }
 
-/*Fondo y ajustes del título*/
+/*Fondo y ajustes del tÃ­tulo*/
 header{
     font-size: 50px;
     text-align: center;
@@ -20,24 +20,24 @@ header{
     top: 0px;
 }
 
-/*Color de fondo del menú*/
+/*Color de fondo del menÃº*/
 nav, .menu, .menu-contenido a{
     background: #084E8C;
 }
 
-/*Fija el menú desplegable en la parte superior de la página
-dejando el espacio para la barra de título*/
+/*Fija el menÃº desplegable en la parte superior de la pÃ¡gina
+dejando el espacio para la barra de tÃ­tulo*/
 nav{
     top: 59px;
 }
 
-/*Muestra el menú desplegable en line horizontal*/
+/*Muestra el menÃº desplegable en line horizontal*/
 .menu{
     position: relative;
     display: inline-block;
 }
 
-/*Ajustes al texto del menú desplegable*/
+/*Ajustes al texto del menÃº desplegable*/
 .menu a, .menu-contenido a{
     color: #ABD7DE;
     padding: 3px;
@@ -45,14 +45,14 @@ nav{
     width: 140px;
 }
 
-/*Se oculta el contenido del menú desplegable
+/*Se oculta el contenido del menÃº desplegable
 y al mostrar se pondra por arriba*/
 .menu-contenido{
     display: none;
     position: absolute;
 }
 
-/*Ajustes al texto del menú desplegable cuando
+/*Ajustes al texto del menÃº desplegable cuando
 el cursor este encima*/
 .menu a:hover, .menu-contenido a:hover{
     background: #FFFFFF;
@@ -60,19 +60,19 @@ el cursor este encima*/
     color: #084E8C;
 }
 
-/*Ubicación de los temas en la página*/
+/*UbicaciÃ³n de los temas en la pÃ¡gina*/
 section{
     margin-top: 90px;
 }
 
-/*Se pone la ubicación del pie de página
+/*Se pone la ubicaciÃ³n del pie de pÃ¡gina
 y su color de fondo*/
 footer{
     clear: both;
     background: gray;
 }
 
-/*Ajustes al texto del pie de página*/
+/*Ajustes al texto del pie de pÃ¡gina*/
 footer td a{
     text-decoration: none;
     color: #464CEC;
@@ -84,7 +84,7 @@ article{
     display: table;
 }
 
-/*Color y tipo de letra de la página*/
+/*Color y tipo de letra de la pÃ¡gina*/
 p, h1, li{
     color: #002861;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -97,17 +97,17 @@ p, h1, li{
     font-size: 12px;
 }
 
-/*Espacio de margen para los títulos*/
+/*Espacio de margen para los tÃ­tulos*/
 h1{
     margin: 20px;
 }
 
-/*Tabulación para mostrar la información con un formato*/
+/*TabulaciÃ³n para mostrar la informaciÃ³n con un formato*/
 p, img, video, .fuente, .dibujoCSS, .cabeza{
     margin-left: 40px;
 }
 
-/*Ubicación para imagenes y su margen por si hay texto*/
+/*UbicaciÃ³n para imagenes y su margen por si hay texto*/
 img{
     float: left;
     margin-right: 10px;
@@ -145,7 +145,7 @@ img{
     background: radial-gradient(ellipse at center, #7C684C 0%,#38280e 60%);
 }
 
-/*Tamaño y forma de la cabeza*/
+/*TamaÃ±o y forma de la cabeza*/
 .cabeza{
     width: 200px;
     height: 200px;
@@ -157,43 +157,43 @@ img{
     border-radius: 100%;
 }
 
-/*Tamaño y ubicación vertical de los ojos*/
+/*TamaÃ±o y ubicaciÃ³n vertical de los ojos*/
 .ojoDerecho, .ojoIquierdo{
     width: 80px;
     height: 80px;
     margin-top: 45px;
 }
 
-/*Ubicación horizontal del ojo derecho*/
+/*UbicaciÃ³n horizontal del ojo derecho*/
 .ojoDerecho{
     margin-left: 15px;
 }
 
-/*Ubicación horizontal del ojo izquierdo*/
+/*UbicaciÃ³n horizontal del ojo izquierdo*/
 .ojoIquierdo{
     margin-left: 105px;
 }
 
-/*Color y ubicación horizontal de las pupilas*/
+/*Color y ubicaciÃ³n horizontal de las pupilas*/
 .pupilaDerecha, .pupilaIzquierda, .pupilaDerecha2, .pupilaIzquierda2{
     background: #FFFFFF;
     margin-left: 28px;
 }
 
-/*Tamaño y ubicación vertical de las pupilas*/
+/*TamaÃ±o y ubicaciÃ³n vertical de las pupilas*/
 .pupilaDerecha, .pupilaIzquierda{
     width: 42px;
     height: 42px;
     margin-top: 6px;
 }
 
-/*Tamaño de las pupilas*/
+/*TamaÃ±o de las pupilas*/
 .pupilaDerecha2, .pupilaIzquierda2{
     width: 10px;
     height: 10px;
 }
 
-/*Tamaño, forma y ubicación la nariz*/
+/*TamaÃ±o, forma y ubicaciÃ³n la nariz*/
 .nariz{
     width: 30px;
     height: 30px;
@@ -202,7 +202,7 @@ img{
     margin-left: 86px;
 }
 
-/*Tamaño, forma y ubicación vertical la boca*/
+/*TamaÃ±o, forma y ubicaciÃ³n vertical la boca*/
 .boca, .boca2{
     width: 60px;
     height: 80px;
@@ -212,29 +212,29 @@ img{
     margin-top: 80px;
 }
 
-/*Ubicación horizontal la boca*/
+/*UbicaciÃ³n horizontal la boca*/
 .boca{
     margin-left: 50px;
 }
 
-/*Ubicación horizontal la boca*/
+/*UbicaciÃ³n horizontal la boca*/
 .boca2{
     margin-left: 90px;
 }
 
-/*Tamaño y ubicación vertical de las orejas*/
+/*TamaÃ±o y ubicaciÃ³n vertical de las orejas*/
 .orejaIzquierda, .orejaDerecha{
     width: 80px;
     height: 80px;
     margin-top: 5px;
 }
 
-/*Ubicación horizontal de la oreja derecha*/
+/*UbicaciÃ³n horizontal de la oreja derecha*/
 .orejaDerecha{
     margin-left: 200px;
 }
 
-/*Tamaño y ubicación del interior de las orejas*/
+/*TamaÃ±o y ubicaciÃ³n del interior de las orejas*/
 .interirorOrejaIzquierda, .interirorOrejaDerecha{
     width: 57px;
     height: 57px;
@@ -242,7 +242,7 @@ img{
     margin-left: 12px;
 }
 
-/*Tamaño, color de los brazos y ubicación de los brazos*/
+/*TamaÃ±o, color de los brazos y ubicaciÃ³n de los brazos*/
 .brazos{
     width: 150px;
     border-bottom: 100px solid #d3b58d;
@@ -257,7 +257,7 @@ img{
     margin-top: 189px;
 }
 
-/*Ubicación vertical del cuerpo*/
+/*UbicaciÃ³n vertical del cuerpo*/
 .cuerpoContorno, .cuerpo, .brazos, .brazosContorno{
     height: 0px;
     border-left: 50px solid transparent;
@@ -265,12 +265,12 @@ img{
     margin-top: 190px;
 }
 
-/*Ajuste a la ubicación vertical del contorno*/
+/*Ajuste a la ubicaciÃ³n vertical del contorno*/
 .brazosContorno{
     margin-top: 189px;
 }
 
-/*Color, tamaño y ubicación horizontal del cuerpo*/
+/*Color, tamaÃ±o y ubicaciÃ³n horizontal del cuerpo*/
 .cuerpo{
     width: 100px;
     border-bottom: 100px solid #d3b58d;
@@ -284,16 +284,16 @@ img{
     margin-left: 39px;
 }
 
-/*Tamaño y ubicación de la parte de abajo del cuerpo*/
+/*TamaÃ±o y ubicaciÃ³n de la parte de abajo del cuerpo*/
 .cuerpo2{
     height: 50px;
     width: 200px;
-    margin-top: 289px;
+    margin-top: 288px;
     margin-left: 39px;
     border-radius: 0% 0% 50% 50%;
 }
 
-/*Tamaño y ubicación vertical de las patas*/
+/*TamaÃ±o y ubicaciÃ³n vertical de las patas*/
 .pataDerecha, .pataIzquierda{
     width: 100px;
     height: 80px;
@@ -301,19 +301,19 @@ img{
     margin-top: 270px;
 }
 
-/*Forma y ubicación horizontal de la pata derecha*/
+/*Forma y ubicaciÃ³n horizontal de la pata derecha*/
 .pataDerecha{
     margin-left: 10px;
     border-radius: 0% 0% 50% 80%;
 }
 
-/*Forma y ubicación horizontal de la pata izquierda*/
+/*Forma y ubicaciÃ³n horizontal de la pata izquierda*/
 .pataIzquierda{
     margin-left: 170px;
     border-radius: 0% 0% 80% 50%;
 }
 
-/*Tamaño, forma y ubicación vertical de los dedos de la pata*/
+/*TamaÃ±o, forma y ubicaciÃ³n vertical de los dedos de la pata*/
 .dedoPata, .dedoPata2, .dedoPata3{
     width: 42px;
     height: 35px;
@@ -322,26 +322,26 @@ img{
     border-radius: 100% 100% 80% 80%;
 }
 
-/*Ubicación horizontal del primer dedo de la pata*/
+/*UbicaciÃ³n horizontal del primer dedo de la pata*/
 .dedoPata{
     margin-left: -4px;
     border-right-color: transparent;
 }
 
-/*Ubicación horizontal del segundo dedo de la pata*/
+/*UbicaciÃ³n horizontal del segundo dedo de la pata*/
 .dedoPata2{
     margin-left: 29px;
     border-right-color: transparent;
     border-left-color: transparent;
 }
 
-/*Ubicación horizontal del tercer dedo de la pata*/
+/*UbicaciÃ³n horizontal del tercer dedo de la pata*/
 .dedoPata3{
     margin-left: 61px;
     border-left-color: transparent;
 }
 
-/*Tamaño, forma y ubicación de las huellas de las patas*/
+/*TamaÃ±o, forma y ubicaciÃ³n de las huellas de las patas*/
 .huellaPataDerecha, .huellaPataIzquierda{
     width: 65px;
     height: 55px;
@@ -355,25 +355,25 @@ img{
     border-radius: 50% 50% 80% 50%;
 }
 
-/*Tamaño de las huellas de los dedos de las patas*/
+/*TamaÃ±o de las huellas de los dedos de las patas*/
 .huellaPata, .huellaPata2, .huellaPata3{
     width: 25px;
     height: 25px;
 }
 
-/*Ubicación de la primer huella del primer dedo de la pata*/
+/*UbicaciÃ³n de la primer huella del primer dedo de la pata*/
 .huellaPata{
     margin-left: 7px;
     margin-top: -16px;
 }
 
-/*Ubicación de la segunda huella del segundo dedo de la pata*/
+/*UbicaciÃ³n de la segunda huella del segundo dedo de la pata*/
 .huellaPata2{
     margin-left: 37px;
     margin-top: -20px;
 }
 
-/*Ubicación de la tercer huella del tercer dedo de la pata*/
+/*UbicaciÃ³n de la tercer huella del tercer dedo de la pata*/
 .huellaPata3{
     margin-left: 67px;
     margin-top: -16px;
