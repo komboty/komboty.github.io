@@ -291,6 +291,7 @@ img{
     margin-top: 288px;
     margin-left: 39px;
     border-radius: 0% 0% 50% 50%;
+    border-top-color: transparent;
 }
 
 /*Tamaño y ubicación vertical de las patas*/
