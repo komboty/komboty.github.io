@@ -1,0 +1,73 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+    </head>
+    <body>
+      <a-scene>
+        <!-- controles -->
+        <a-entity windows-motion-controls="hand: left"></a-entity>
+        <a-entity windows-motion-controls="hand: right"></a-entity>
+
+
+        <!-- robot cabeza -->
+        <a-cone position="0 4.3 -5" radius-bottom="1.2" radius-top="0.1" color="#EF2D5E"></a-cone>
+        <a-cone position="0 3.7 -4.5" height="0.5" radius-bottom="0.2" radius-top="0.5" color="#FFC65D"></a-cone>
+        <a-sphere position="0 3.5 -5" radius="0.8" color="#EF2D5E"></a-sphere>
+        <a-cone position="0 2.97 -5" height="0.5" radius-bottom="0.9" radius-top="1" color="#EF2D5E"></a-cone>
+
+
+        <!-- robot ojos -->
+        <a-sphere position="-0.3 3.5 -4.3" radius="0.1" color="#000000"></a-sphere>
+        <a-sphere position="0.3 3.5 -4.3" radius="0.1" color="#000000"></a-sphere>
+
+
+        <!-- robot cuerpo -->
+        <a-sphere position="0 2 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-torus position="-0.01 1.65 -5" rotation="90 0 0" arc="360" radius="1.1" radius-tubular="0.1" color="#d4d4d4"></a-torus>
+
+
+        <!-- robot manos -->
+        <a-cylinder position="-1.5 2.2 -5" rotation="0 0 -50" radius="0.4" height="2" color="#FFC65D"></a-cylinder>
+        <a-cone position="-2.2 1.6 -5" rotation="0 0 -50" height="1" radius-bottom="0.2" radius-top="0.5" color="#0080ff"></a-cone>
+
+        <a-cylinder position="1.5 2.2 -5" rotation="0 0 50" radius="0.4" height="2" color="#FFC65D"></a-cylinder>
+        <a-cone position="2.2 1.6 -5" rotation="0 0 50" height="1" radius-bottom="0.05" radius-top="0.6" color="#0080ff"></a-cone>
+
+
+        <!-- robot pies -->
+        <a-cylinder position="-0.6 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+        <a-cone position="-0.6 -0.25 -5" height="0.5" radius-bottom="0.2" radius-top="0.5" color="#FFC65D"></a-cone>
+
+        <a-cylinder position="0.6 0.75 -5" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>        
+        <a-cone position="0.6 -0.25 -5" height="0.5" radius-bottom="0.2" radius-top="0.5" color="#FFC65D"></a-cone>
+
+        
+
+
+
+        <!-- mini robot cabeza -->
+        <a-cone position="5 0.6 -5.3" rotation="-50 0 0" height="1" radius-bottom="0.08" radius-top="0.6" color="#ff8455"></a-cone>
+
+
+        <!-- robot ojos -->
+        <a-sphere position="4.8 0.8 -5.2" radius="0.1" color="#000000"></a-sphere>
+        <a-sphere position="5.2 0.8 -5.2" radius="0.1" color="#000000"></a-sphere>
+
+
+        <!-- mini robot cuerpo -->
+        <a-dodecahedron position="5 0.7 -6" radius="1" color="#FF926B"></a-dodecahedron>
+        <a-octahedron position="5 0.69 -6.6" radius="0.5" color="#FF926B"></a-octahedron>
+        
+
+        <!-- mini robot pies -->
+        <a-cylinder position="4.5 0 -6" radius="0.18" height="1" color="#FF926B"></a-cylinder>
+        <a-cone position="4.5 -0.62 -6" height="0.25" radius-bottom="0.05" radius-top="0.18" color="#FF926B"></a-cone>
+
+        <a-cylinder position="5.5 0 -6" radius="0.18" height="1" color="#FF926B"></a-cylinder>
+        <a-cone position="5.5 -0.62 -6" height="0.25" radius-bottom="0.05" radius-top="0.18" color="#FF926B"></a-cone>
+
+        <a-sky color="#6EBAA7"></a-sky>
+      </a-scene>
+    </body>
+  </html>
