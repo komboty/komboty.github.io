@@ -8,7 +8,7 @@
 	</head>
 	<body style='margin : 0px; overflow: hidden;'>		
 		<a-scene embedded arjs>
-			<a-text position="0 0.5 0" rotation="-90 0 0" color="red" value="Holi"></a-text>
+			<a-text position="0 0.5 0" rotation="-90 0 0" color="blue" value="Holi"></a-text>
 			<!--<a-plane position="0 0 0" rotation="-90 0 0" material="opacity: 0.5" color="red"></a-plane>-->
 			<a-marker-camera preset='hiro'></a-marker-camera>
 		</a-scene>
@@ -19,12 +19,14 @@
 			var text = document.querySelector("a-text")
 
 			marker.addEventListener("markerFound", (e) => {
-			   text.setAttribute('value', "X:" + text.object3D.position.x + "\nY:" + text.object3D.position.y + "\nZ:" + text.object3D.position.z)
+			   //text.setAttribute('value', "X:" + text.object3D.position.x + "\nY:" + text.object3D.position.y + "\nZ:" + text.object3D.position.z)
+			   var msg = new SpeechSynthesisUtterance('Holi');
+			   window.speechSynthesis.speak(msg);
 			})
 
 			marker.addEventListener("markerLost", (e) => {			   
-			   var msg = new SpeechSynthesisUtterance('Holi');
-			   window.speechSynthesis.speak(msg);
+			   //var msg = new SpeechSynthesisUtterance('Holi');
+			   //window.speechSynthesis.speak(msg);
 			})
 		</script>
 	</body>
