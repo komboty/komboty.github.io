@@ -23,7 +23,8 @@
 			})
 
 			marker.addEventListener("markerLost", (e) => {			   
-			   text.setAttribute('value', "X:" + text.object3D.position.x + "\nY:" + text.object3D.position.y + "\nZ:" + text.object3D.position.z)
+			   var msg = new SpeechSynthesisUtterance("X:" + text.object3D.position.x + "\nY:" + text.object3D.position.y + "\nZ:" + text.object3D.position.z);
+			   window.speechSynthesis.speak(msg);
 			})
 		</script>
 	</body>
