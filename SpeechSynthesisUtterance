@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<input id="text" type="text"/>
+	<button onclick="myFunction()">Click </button>
+	<script type="text/javascript">
+		function myFunction() {	
+			var text = document.getElementById("text")
+			var msg = new SpeechSynthesisUtterance(text.value)
+			window.speechSynthesis.speak(msg)
+		}
+	</script>
+</body>
+</html>
