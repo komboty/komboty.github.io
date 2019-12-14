@@ -8,6 +8,7 @@
 	</head>
 	<body style='margin : 0px; overflow: hidden;'>		
 		<a-scene embedded arjs>
+			<a-entity text="value: Hello World; color: black"></a-entity>
 			<a-box position='0 0.5 0' color="#EF2D5E" material='opacity: 0.5;'></a-box>
 			<a-marker-camera preset='hiro'></a-marker-camera>
 		</a-scene>
@@ -15,14 +16,13 @@
 		<script type="text/javascript">
 			var marker = document.querySelector("a-marker-camera")
 			var caja = document.querySelector("a-box")
+			var text = document.querySelector("a-entity")
 
 			marker.addEventListener("markerFound", (e) => {
-			   //alert(caja.object3D.position)
-			   //caja.setAttribute('text', {value: "Encontrado"})
+			   text.setAttribute('text', {value: caja.getAttribute('position')})
 			})
 
-			marker.addEventListener("markerLost", (e) => {
-			   alert(caja.object3D.position)
+			marker.addEventListener("markerLost", (e) => {			   
 			   //caja.setAttribute('text', {value: "Perdido"})
 			})
 		</script>
