@@ -8,14 +8,7 @@
 	</head>
 	<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
 		<div style='position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;'>Measure the distance - hiro</div>
-
-<button style='position: absolute; top: 10px; width:100%; text-align: center; z-index: 1;' onclick="myFunction()">Click </button>
-	<script type="text/javascript">
-		function myFunction() {	
-			var msg = new SpeechSynthesisUtterance('Simon')
-			window.speechSynthesis.speak(msg)
-		}
-	</script>		
+	
 <script>THREEx.ArToolkitContext.baseURL = '../'</script>
 <script>
 	//////////////////////////////////////////////////////////////////////////////////
@@ -136,10 +129,12 @@
 	onRenderFcts.push(function(){
 		if( markerRoot1.visible === true && markerRoot2.visible === true ){
 			container.visible = true
-			document.querySelector('.scanningSpinner').style.display = 'none'
+			document.querySelector('.scanningSpinner').style.display = 'none'			
 		}else{
 			container.visible = false
 			document.querySelector('.scanningSpinner').style.display = ''
+			var msg = new SpeechSynthesisUtterance('Simon')
+			window.speechSynthesis.speak(msg)
 		}
 	})
 	//////////////////////////////////////////////////////////////////////////////
