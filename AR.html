@@ -8,21 +8,21 @@
 	</head>
 	<body style='margin : 0px; overflow: hidden;'>		
 		<a-scene embedded arjs>
-
 			<a-box position='0 0.5 0' color="#EF2D5E" material='opacity: 0.5;'></a-box>
 			<a-marker-camera preset='hiro'></a-marker-camera>
 		</a-scene>
 
 		<script type="text/javascript">
 			var marker = document.querySelector("a-marker-camera")
+			var caja = document.querySelector("a-box")
 
 			marker.addEventListener("markerFound", (e) => {
-			   console.log("found")
+			   //alert(caja.object3D.position)
 			   //caja.setAttribute('text', {value: "Encontrado"})
 			})
 
 			marker.addEventListener("markerLost", (e) => {
-			   console.log("lost")
+			   alert(caja.object3D.position)
 			   //caja.setAttribute('text', {value: "Perdido"})
 			})
 		</script>
